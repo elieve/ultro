@@ -34,7 +34,7 @@ from ._help import _main_help_menu
 
 # ================================================#
 
-TLINK = INLINE_PIC or "https://telegra.ph/file/67c46ee5ad87c9bb04c8d.jpg"
+TLINK = INLINE_PIC or "https://telegra.ph/file/ab84cef6030668d52659c.jpg"
 helps = get_string("inline_1")
 
 add_ons = udB.get_key("ADDONS")
@@ -53,7 +53,7 @@ upage = 0
 
 SUP_BUTTONS = [
     [
-        Button.url("• Repo •", url="https://github.com/elieve/ultroid"),
+        Button.url("• Repo •", url="https://github.com/elieve/ultro"),
         Button.url("• Support •", url="t.me/ygabutkan"),
     ],
 ]
@@ -65,7 +65,7 @@ SUP_BUTTONS = [
 async def inline_alive(o):
     MSG = "• **Bay Userbot •**"
     WEB0 = InputWebDocument(
-        "https://telegra.ph/file/acd4f5d61369f74c5e7a7.jpg", 0, "image/jpg", []
+        "https://telegra.ph/file/ab84cef6030668d52659c.jpg", 0, "image/jpg", []
     )
     RES = [
         await o.builder.article(
@@ -283,7 +283,7 @@ async def _(event):
 InPlugin = {
     "Pʟᴀʏ Sᴛᴏʀᴇ Aᴘᴘs": "app telegram",
     "Mᴏᴅᴅᴇᴅ Aᴘᴘs": "mods minecraft",
-    "Sᴇᴀʀᴄʜ Oɴ Gᴏᴏɢʟᴇ": "go TeamUltroid",
+    "Sᴇᴀʀᴄʜ Oɴ Gᴏᴏɢʟᴇ": "go baytoddd",
     "Search on XDA": "xda telegram",
     "WʜɪSᴘᴇʀ": "wspr @username Hello🎉",
     "YᴏᴜTᴜʙᴇ Dᴏᴡɴʟᴏᴀᴅᴇʀ": "yt Ed Sheeran Perfect",
