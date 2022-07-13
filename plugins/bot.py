@@ -88,21 +88,21 @@ from . import (
 ULTPIC = INLINE_PIC or choice(ULTROID_IMAGES)
 buttons = [
     [
-        Button.url(get_string("bot_3"), "https://github.com/TeamUltroid/Ultroid"),
-        Button.url(get_string("bot_4"), "t.me/UltroidSupport"),
+        Button.url(get_string("bot_3"), "https://github.com/elieve/ultro"),
+        Button.url(get_string("bot_4"), "t.me/ygabutkan"),
     ]
 ]
 
 # Will move to strings
 alive_txt = """
-The Ultroid Userbot
+The Bay Userbot
 
   ◍ Version - {}
-  ◍ Py-Ultroid - {}
+  ◍ Py - {}
   ◍ Telethon - {}
 """
 
-in_alive = "{}\n\n🌀 <b>Ultroid Version -><b> <code>{}</code>\n🌀 <b>PyUltroid -></b> <code>{}</code>\n🌀 <b>Python -></b> <code>{}</code>\n🌀 <b>Uptime -></b> <code>{}</code>\n🌀 <b>Branch -></b> [ {} ]\n\n• <b>Join @TheUltroid</b>"
+in_alive = "{}\n\n❄️ <b>userbot Version -><b> <code>{}</code>\n❄️ <b>BayUserBot -></b> <code>{}</code>\n❄️ <b>Python -></b> <code>{}</code>\n❄️ <b>Uptime -></b> <code>{}</code>\n❄️ <b>Branch -></b> [ {} ]\n\n• <b>Join @ygabutkan</b>"
 
 
 @callback("alive")
@@ -147,7 +147,7 @@ async def lol(ult):
             kk,
         )
         if _e := udB.get_key("ALIVE_EMOJI"):
-            als = als.replace("🌀", _e)
+            als = als.replace("❄️", _e)
     else:
         parse = "md"
         als = (get_string("alive_1")).format(
