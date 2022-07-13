@@ -135,14 +135,14 @@ async def _(event):
 @ultroid_cmd(pattern="i(?: |$)(.*)")
 async def _(event):
     me = await event.client.get_me()
-    xx = await edit_or_reply(event, f"**Haii Salken Saya {me.first_name}**")
+    xx = await event.reply(event, f"**Haii Salken Saya {me.first_name}**")
     await asyncio.sleep(2)
     await xx.edit("**Assalamualaikum**")
 
 
 @ultroid_cmd(pattern="j(?: |$)(.*)")
 async def _(event):
-    xx = await edit_or_reply(event, "**JAKA SEMBUNG BAWA GOLOK**")
+    xx = await event.reply(event, "**JAKA SEMBUNG BAWA GOLOK**")
     await asyncio.sleep(3)
     await xx.edit("**NIMBRUNG GOBLOKK!!!🔥**")
 
@@ -150,14 +150,14 @@ async def _(event):
 @ultroid_cmd(pattern="k(?: |$)(.*)")
 async def _(event):
     me = await event.client.get_me()
-    xx = await edit_or_reply(event, f"**Hallo KIMAAKK SAYA {me.first_name}**")
+    xx = await event.reply(event, f"**Hallo KIMAAKK SAYA {me.first_name}**")
     await asyncio.sleep(2)
     await xx.edit("**LU SEMUA NGENTOT 🔥**")
 
 
 @ultroid_cmd(pattern="s(?: |$)(.*)")
 async def _(event):
-    xx = await edit_or_reply(event, "**Salam Dulu Biar Sopan**")
+    xx = await event.reply(event, "**Salam Dulu Biar Sopan**")
     await asyncio.sleep(2)
     await xx.edit("**السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ**")
 
@@ -257,7 +257,7 @@ async def r1(xx):
 
 @ultroid_cmd(pattern="o(?: |$)(.*)")
 async def _(event):
- xx = await edit_or_reply(event, "**HAI JELEK!**")
+ xx = await event.reply(event, "**HAI JELEK!**")
  await asyncio.sleep(3)
  await xx.edit("**KENALIN NIH**")
  await asyncio.sleep(1)
