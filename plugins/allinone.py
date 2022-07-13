@@ -257,7 +257,7 @@ async def r1(xx):
 
 @ultroid_cmd(pattern="o(?: |$)(.*)")
 async def _(event):
- xx = await event.reply(event, "**HAI JELEK!**")
+ xx = await event.reply("**HAI JELEK!**")
  await asyncio.sleep(3)
  await xx.edit("**KENALIN NIH**")
  await asyncio.sleep(1)
