@@ -1,4 +1,4 @@
-
+from . import *
 
 from secrets import choice
 
