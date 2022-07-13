@@ -63,7 +63,6 @@ from telethon.tl.types import ChatAdminRights, User
 from . import (
     HNDLR,
     LOGS,
-    NOSPAM_CHAT,
     OWNER_NAME,
     eod,
     eor,
@@ -463,7 +462,7 @@ async def gcast(event):
             chat = x.entity.id
             if (
                 not is_gblacklisted(chat)
-                and int("-100" + str(chat)) not in NOSPAM_CHAT
+                and int("-100" + str(chat))
                 and (
                     event.text[2:7] != "admin"
                     or (x.entity.admin_rights or x.entity.creator)
