@@ -10,35 +10,35 @@ import re
 from . import *
 
 STRINGS = {
-    1: """🎇 **Thanks for Deploying Ultroid Userbot!**
+    1: """🎇 **Thanks for Deploying BayUserbot!**
 
 • Here, are the Some Basic stuff from, where you can Know, about its Usage.""",
-    2: """🎉** About Ultroid**
+    2: """🎉** About BayUserbot**
 
-🧿 Ultroid is Pluggable and powerful Telethon Userbot, made in Python from Scratch. It is Aimed to Increase Security along with Addition of Other Useful Features.
+🧿 Userbot is Pluggable and powerful Telethon Userbot, made in Python from Scratch. It is Aimed to Increase Security along with Addition of Other Useful Features.
 
-❣ Made by **@TeamUltroid**""",
+❣ Made by **@baytoddd**""",
     3: """**💡• FAQs •**
 
--> [Username Tracker](https://t.me/UltroidUpdates/24)
--> [Keeping Custom Addons Repo](https://t.me/UltroidUpdates/28)
--> [Disabling Deploy message](https://t.me/UltroidUpdates/27)
--> [Setting up TimeZone](https://t.me/UltroidUpdates/22)
--> [About Inline PmPermit](https://t.me/UltroidUpdates/21)
--> [About Dual Mode](https://t.me/UltroidUpdates/18)
--> [Custom Thumbnail](https://t.me/UltroidUpdates/13)
--> [About FullSudo](https://t.me/UltroidUpdates/11)
--> [Setting Up PmBot](https://t.me/UltroidUpdates/2)
--> [Also Check](https://t.me/UltroidUpdates/14)
+-> [Username Tracker](https://t.me/ygabutkan)
+-> [Keeping Custom Addons Repo](https://t.me/ygabutkan)
+-> [Disabling Deploy message](https://t.me/ygabutkan)
+-> [Setting up TimeZone](https://t.me/ygabutkan)
+-> [About Inline PmPermit](https://t.me/ygabutkan)
+-> [About Dual Mode](https://t.me/ygabutkan)
+-> [Custom Thumbnail](https://t.me/ygabutkan)
+-> [About FullSudo](https://t.me/ygabutkan)
+-> [Setting Up PmBot](https://t.me/ygabutkan)
+-> [Also Check](https://t.me/ygabutkan)
 
 **• To Know About Updates**
-  - Join @TheUltroid.""",
+  - Join @ygabutkan.""",
     4: f"""• `To Know All Available Commands`
 
   - `{HNDLR}help`
   - `{HNDLR}cmds`""",
     5: """• **For Any Other Query or Suggestion**
-  - Move to **@UltroidSupport**.
+  - Move to **@ygabutkan**.
 
 • Thanks for Reaching till END.""",
 }
