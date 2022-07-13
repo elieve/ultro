@@ -375,11 +375,9 @@ from secrets import choice
 
 from telethon.tl.types import InputMessagesFilterVideo, InputMessagesFilterVoice
 
-from userbot.utils import edit_or_reply
-
 @ultroid_cmd(pattern="desahcewe$")
 async def _(event):
-    xx = await edit_or_reply(event, "`Tunggu Sebentar...`")
+    xx = await event.reply(event, "`Tunggu Sebentar...`")
     try:
         desahcewe = [
             desah
@@ -397,7 +395,7 @@ async def _(event):
 
 @ultroid_cmd(pattern="desahcowo$")
 async def _(event):
-    xx = await edit_or_reply(event, "`Tunggu Sebentar...`")
+    xx = await event.reply(event, "`Tunggu Sebentar...`")
     try:
         desahcowo = [
             desah
@@ -416,7 +414,7 @@ async def _(event):
 
 @ultroid_cmd(pattern="asupan$")
 async def _(event):
-    xx = await edit_or_reply(event, "`Tunggu Sebentar...`")
+    xx = await event.reply(event, "`Tunggu Sebentar...`")
     try:
         asupannya = [
             asupan
@@ -435,7 +433,7 @@ async def _(event):
              
 
 async def _(event):
-    xx = await edit_or_reply(event, "`Tunggu Sebentar...`")
+    xx = await event.reply(event, "`Tunggu Sebentar...`")
     try:
         asupannya = [
             bokep
