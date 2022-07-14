@@ -95,10 +95,10 @@ buttons = [
 
 # Will move to strings
 alive_txt = """
-The Bay Userbot
+**✨Bay Userbot✨**
 
   ◍ Version - {}
-  ◍ Py - {}
+  ◍ Py Version- {}
   ◍ Telethon - {}
 """
 
@@ -126,7 +126,7 @@ async def lol(ult):
         except BaseException as er:
             LOGS.exception(er)
         inline = True
-    pic = udB.get_key("ALIVE_PIC")
+    pic = udB.get_key("ALIVE_PIC", "https://telegra.ph/file/ca5c07f5566431e1e6152.jpg")
     if isinstance(pic, list):
         pic = choice(pic)
     uptime = time_formatter((time.time() - start_time) * 1000)
@@ -269,7 +269,7 @@ async def _(event):
 
 @in_pattern("alive", owner=True)
 async def inline_alive(ult):
-    pic = udB.get_key("ALIVE_PIC")
+    pic = udB.get_key("ALIVE_PIC", "https://telegra.ph/file/ca5c07f5566431e1e6152.jpg")
     if isinstance(pic, list):
         pic = choice(pic)
     uptime = time_formatter((time.time() - start_time) * 1000)
@@ -287,7 +287,7 @@ async def inline_alive(ult):
         kk,
     )
     if _e := udB.get_key("ALIVE_EMOJI"):
-        als = als.replace("🌀", _e)
+        als = als.replace("✨", _e)
     builder = ult.builder
     if pic:
         try:
@@ -308,7 +308,7 @@ async def inline_alive(ult):
                     await builder.document(
                         pic,
                         title="Inline Alive",
-                        description="@TheUltroid",
+                        description="@ygabutkan",
                         parse_mode="html",
                         buttons=buttons,
                     )
