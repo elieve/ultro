@@ -126,7 +126,7 @@ async def lol(ult):
         except BaseException as er:
             LOGS.exception(er)
         inline = True
-    pic = udB.get_key("ALIVE_PIC", "https://telegra.ph/file/ca5c07f5566431e1e6152.jpg")
+    pic = INLINE_PIC
     if isinstance(pic, list):
         pic = choice(pic)
     uptime = time_formatter((time.time() - start_time) * 1000)
@@ -269,7 +269,7 @@ async def _(event):
 
 @in_pattern("alive", owner=True)
 async def inline_alive(ult):
-    pic = udB.get_key("ALIVE_PIC", "https://telegra.ph/file/ca5c07f5566431e1e6152.jpg")
+    pic = INLINE_PIC
     if isinstance(pic, list):
         pic = choice(pic)
     uptime = time_formatter((time.time() - start_time) * 1000)
