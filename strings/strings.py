@@ -15,7 +15,7 @@ try:
 except ModuleNotFoundError:
     from pyUltroid.functions.tools import safe_load
 
-language = [udB.get_key("language") or "en"]
+language = [udB.get_key("language") or "id"]
 languages = {}
 
 strings_folder = path.join(path.dirname(path.realpath(__file__)), "strings")
