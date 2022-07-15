@@ -10,8 +10,9 @@ from telethon.tl.functions.channels import GetFullChannelRequest, GetParticipant
 from time import sleep
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
-#create by Bagaskara
-#Yang Copas Doang, Lu kontol
+from telethon.errors import PeerIdInvalidError, YouBlockedUserError
+from telethon.tl.types import DocumentAttributeFilename, DocumentAttributeSticker
+from telethon.utils import get_input_document
 
 @ultroid_cmd(outgoing=True, pattern="tiktok(?: |$)(.*)")
 async def _(event):
@@ -395,7 +396,7 @@ async def _(event):
 
 @ultroid_cmd(pattern="desahcowo$")
 async def _(event):
-    xx = await event.reply(event, "`Tunggu Sebentar...`")
+    xx = await event.reply("`Tunggu Sebentar...`")
     try:
         desahcowo = [
             desah
@@ -414,7 +415,7 @@ async def _(event):
 
 @ultroid_cmd(pattern="asupan$")
 async def _(event):
-    xx = await event.send_message(event, "`Tunggu Sebentar...`")
+    xx = await event.reply("`Tunggu Sebentar...`")
     try:
         asupannya = [
             asupan
@@ -433,7 +434,7 @@ async def _(event):
              
 
 async def _(event):
-    xx = await event.edit(event, "`Tunggu Sebentar...`")
+    xx = await event.reply("`Tunggu Sebentar...`")
     try:
         asupannya = [
             bokep
