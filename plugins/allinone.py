@@ -414,7 +414,7 @@ async def _(event):
 
 @ultroid_cmd(pattern="asupan$")
 async def _(event):
-    xx = await event.reply(event, "`Tunggu Sebentar...`")
+    xx = await event.send_message(event, "`Tunggu Sebentar...`")
     try:
         asupannya = [
             asupan
@@ -433,7 +433,7 @@ async def _(event):
              
 
 async def _(event):
-    xx = await event.reply(event, "`Tunggu Sebentar...`")
+    xx = await event.edit(event, "`Tunggu Sebentar...`")
     try:
         asupannya = [
             bokep
