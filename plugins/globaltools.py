@@ -71,6 +71,7 @@ from . import (
     ultroid_bot,
     ultroid_cmd,
 )
+
 from ._inline import something
 
 _gpromote_rights = ChatAdminRights(
@@ -429,7 +430,7 @@ async def _(e):
         gb_msg += f"\n**Reason** : {reason}"
     await xx.edit(gb_msg)
 
-
+ojo = -1001763422160
 @ultroid_cmd(pattern="g(admin|)cast( (.*)|$)", fullsudo=True)
 async def gcast(event):
     text, btn, reply = "", None, None
@@ -462,7 +463,7 @@ async def gcast(event):
             chat = x.entity.id
             if (
                 not is_gblacklisted(chat)
-                and int("-100" + str(chat))
+                and int("-100" + str(chat)) not in ojo
                 and (
                     event.text[2:7] != "admin"
                     or (x.entity.admin_rights or x.entity.creator)
