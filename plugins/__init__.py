@@ -51,6 +51,7 @@ STUFF = {}
 
 NOSPAM_CHAT = [
     -1001763422160,
+    -1001694702057,
 ]
 # Chats, which needs to be ignore for some cases
 # Considerably, there can be many
