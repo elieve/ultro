@@ -1,3 +1,5 @@
+
+
 # Ultroid - UserBot
 # Copyright (C) 2021-2022 TeamUltroid
 #
@@ -62,7 +64,7 @@ from telethon.tl.types import ChatAdminRights, User
 
 from . import (
     HNDLR,
-    ojo,
+    NOSPAM_CHAT,
     LOGS,
     OWNER_NAME,
     eod,
@@ -464,7 +466,7 @@ async def gcast(event):
             chat = x.entity.id
             if (
                 not is_gblacklisted(chat)
-                and int("-100" + str(chat)) not in ojo
+                and int("-100" + str(chat)) not in NOSPAM_CHAT
                 and (
                     event.text[2:7] != "admin"
                     or (x.entity.admin_rights or x.entity.creator)
