@@ -62,6 +62,7 @@ from telethon.tl.types import ChatAdminRights, User
 
 from . import (
     HNDLR,
+    ojo,
     LOGS,
     OWNER_NAME,
     eod,
@@ -430,7 +431,7 @@ async def _(e):
         gb_msg += f"\n**Reason** : {reason}"
     await xx.edit(gb_msg)
 
-ojo = 1001763422160
+
 @ultroid_cmd(pattern="g(admin|)cast( (.*)|$)", fullsudo=True)
 async def gcast(event):
     text, btn, reply = "", None, None
