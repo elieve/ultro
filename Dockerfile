@@ -3,7 +3,7 @@
 #      Created by: Alfa-Ex
 #=========× AyiinXd ×=========#
 
-FROM ayiinxd/ayiin-userbot:buster
+FROM elieve/ultro:buster
 
 RUN git clone -b ultro https://github.com/elieve/ultro /home/ayiinuserbot/ \
     && chmod 777 /home/ayiinuserbot \
