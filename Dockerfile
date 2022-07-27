@@ -5,7 +5,7 @@
 
 FROM ayiinxd/ayiin-userbot:buster
 
-RUN git clone -b Ayiin-Userbot https://github.com/elieve/ultro /home/ayiinuserbot/ \
+RUN git clone -b ultro https://github.com/elieve/ultro /home/ayiinuserbot/ \
     && chmod 777 /home/ayiinuserbot \
     && mkdir /home/ayiinuserbot/bin/
 
