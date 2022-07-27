@@ -28,14 +28,8 @@
             "description": "Your session string. Can be added now, or after deploy. (The bot will NOT work without a session string!!)",
             "value": ""
         },
-        "REDIS_URI": {
-            "description": "Redis endpoint URL, from redislabs.com",
-            "value": ""
-        },
-        "REDIS_PASSWORD": {
-            "description": "Redis endpoint password, from redislabs.com",
-            "value": ""
-        },
+        
+        
         "HEROKU_API": {
             "description": "Heroku API token. Mandatory for Heroku Deploy...",
             "value": "",
@@ -47,6 +41,22 @@
             "required": false
         }
     },
+    "addons": [
+      {
+      "plan": "heroku-postgresql",
+        "options": {
+          "version": "12"
+        }
+      }
+    ],
+    "buildpacks": [
+      {
+      "url": "heroku/python"
+      },
+      {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+      }
+    ],
     "formation": {
         "ultroid": {
             "quantity": 1,
