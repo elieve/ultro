@@ -1,20 +1,15 @@
-# Ultroid - UserBot
-# Copyright (C) 2021-2022 TeamUltroid
-# This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
-# PLease read the GNU Affero General Public License in <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
 
-FROM elieve/ultro:main
 
-# set timezone
-ENV TZ=Asia/Kolkata
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+FROM elieve/ultro:buster
 
-COPY installer.sh .
+RUN git clone -b ultro https://github.com/elieve/ultro /home/ultro/ \
+    && chmod 777 /home/ultro \
+    && mkdir /home/ultro/bin/
 
-RUN bash installer.sh
+COPY ./sample.env ./.env* /home/ayiinuserbot/
 
-# changing workdir
-WORKDIR "/root/elieve"
+WORKDIR /home/ultro/
 
-# start the bot.
-CMD ["bash", "y"]
+RUN pip install -r requirements.txt
+
+CMD ["bash","y"]
