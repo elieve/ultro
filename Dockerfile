@@ -1,6 +1,6 @@
 
 
-FROM elieve/ultro:buster
+FROM elieve/ultro:main
 
 RUN git clone -b ultro https://github.com/elieve/ultro /home/ultro/ \
     && chmod 777 /home/ultro \
