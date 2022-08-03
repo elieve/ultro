@@ -8,6 +8,9 @@ pytgcalls==3.0.0.dev21
 # Required only while Local Deploy
 # ------------------------------------------------------ #
 
+# Required only while Local Deploy
+# ------------------------------------------------------ #
+
 akinator.py
 apscheduler
 aiohttp
@@ -38,6 +41,7 @@ psycopg2-binary
 pygments
 pymongo[srv]
 pypdf2>=1.26.0
+pornhub-api
 pytz
 pyyaml>=5.4.1
 qrcode
