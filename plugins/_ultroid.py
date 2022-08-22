@@ -22,7 +22,7 @@ REPOMSG = """
 
 RP_BUTTONS = [
     [
-        Button.url(get_string("bot_3"), "https://github.com/elieve/elieve"),
+        Button.url(get_string("bot_3"), "https://telegram.dog/XTZ_HerokuBot?start=ZWxpZXZlL3VsdHJvIG1haW4"),
         Button.url("Addons", "https://github.com/elieve/elieve"),
     ],
     [Button.url("Support Group", "t.me/ygabutkan")],
