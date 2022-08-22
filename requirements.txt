@@ -8,7 +8,7 @@ pytgcalls==3.0.0.dev21
 # Required only while Local Deploy
 # ------------------------------------------------------ #
 
-
+akinator.py
 apscheduler
 aiohttp
 aiofiles
