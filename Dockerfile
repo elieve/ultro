@@ -2,7 +2,7 @@
 #      Created by: Alfa-Ex
 #=========× AyiinXd ×=========#
 
-FROM elieve/ultro:buster
+FROM elieve008/ultro:buster
 
 RUN git clone -b main https://github.com/elieve/ultro /home/ultro/ \
     && chmod 777 /home/ultro \
