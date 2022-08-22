@@ -34,7 +34,7 @@ ULTSTRING = """🎇 **Terimakasih Sudah Menggunakan BAY Userbot!**
 
 
 @ultroid_cmd(
-    pattern="repo$",
+    pattern="github$",
     manager=True,
 )
 async def repify(e):
