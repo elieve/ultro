@@ -43,7 +43,7 @@
         "VCBOT": {
             "description": "SKIP SAJA",
             "value": "True",
-            "required": True
+            "required": true
         },
         "": {
             "description": "SKIP SAJA",
