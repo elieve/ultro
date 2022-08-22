@@ -45,7 +45,7 @@
             "value": "True",
             "required": true
         },
-        "": {
+        "INIT_DEPLOY": {
             "description": "SKIP SAJA",
             "value": "True",
             "required": true
